@@ -1,0 +1,42 @@
+{% extends "streapp/plantilla_base.html" %}
+
+{% block contenido_base %}
+
+<p></p>
+
+<h1 class="display-5 fw-bolder text-black mb-2">Buscar Pelicula</h1> 
+
+<p></p>
+{% if nombre %}
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Genero</th>
+        <th scope="col">fecha</th>
+        <th scope="col">Edad Minima</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for lista in nombre %} 
+      <tr>
+        <th scope="row">{{lista.id}}</th>
+        <td>{{lista.nombre}}</td>
+        <td>{{lista.genero}}</td>
+        <td>{{lista.fecha}}</td>
+        <td>{{lista.aptoPara}}</td>
+      </tr>
+    </tbody>
+    {% endfor %}
+  </table>
+  {% else %}
+  <h1> No hay películas con esa busqueda </h1>
+  {% endif %}
+
+
+<p></p>
+<p></p>
+
+
+{% endblock contenido_base %}
