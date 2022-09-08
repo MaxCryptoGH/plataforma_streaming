@@ -4,12 +4,11 @@
 
 <p></p>
 
-<h1 class="display-5 fw-bolder text-black mb-2">Peliculas</h1> 
+<h1 class="display-5 fw-bolder text-black mb-2" style= "margin-left:10px">Peliculas</h1> 
 
 <p></p>
-<table class="table">
-    <thead>
-      <tr>
+<table border="4" style="width:auto; height:auto; margin-left:10px" class="table table-condensed table-bordered table-hover">
+  <tr align="center" class="active">
         <th scope="col">ID</th>
         <th scope="col">Nombre</th>
         <th scope="col">Genero</th>
@@ -34,7 +33,7 @@
 <p></p>
 <p></p>
 
-<a class="btn btn-primary btn-lg px-4 me-sm-3" href="{% url 'form_peliculas' %}">Crear pelicula!</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-primary btn-lg px-4 me-sm-3" href="{% url 'form_peliculas' %}">Crear película!</a>
 <a class="btn btn-primary btn-lg px-4 me-sm-3" href="{% url 'buscar_pelicula' %}">Buscar películas!</a>
 
 <p></p>

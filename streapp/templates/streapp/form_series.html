@@ -8,8 +8,12 @@
   <p></p>
   
     {% csrf_token %}
-    {{ form_series.as_p }}
-    <input type="submit" value="Enviar" />
-  </form>
+  <table>
+    {{ form_series.as_table }}
+  </table>
+  <p></p>
+  &nbsp;&nbsp;&nbsp;&nbsp; <input class="btn btn-primary btn-lg px-3 me-sm-2" type="submit" value="Enviar" />
+  <p></p>
+</form>
 
 {% endblock contenido_base %}
